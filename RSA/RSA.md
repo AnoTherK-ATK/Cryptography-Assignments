@@ -55,6 +55,7 @@ First, I used [factordb](http://factordb.com/) to find the factors of $n$
 ![](RSAStarter5.png)
 We have $p$ and $q$ now.
 Calculate in sequence:
+
 $$\begin{align*}\phi  &= \left( {p - 1} \right) \times \left( {q - 1} \right)\\d &= {e^{ - 1}}\bmod \phi \\m &= {c^d}\bmod n\end{align*}$$
 
 ### Code
@@ -186,7 +187,7 @@ print(long_to_bytes(m))
 
 ## Salty
 ### Solution
-$$\begin{align*}e &= 1\\\Leftrightarrow d &= 1^{-1} = 1 \\\end{align*}$$
+$$\begin{align*}e &= 1\\ \Leftrightarrow d &= 1^{-1} = 1 \\ \end{align*}$$
 
 ### Code
 
@@ -725,6 +726,7 @@ print(bytes.fromhex(received["signature"][2:]))
 
 ## Let's Decrypt
 ### Solution
+
 Write $m$ to represent the message and $\sigma$ the signature we got. We don't care about the public key of the server, so we only reference our own public key with $N$ or $e$.
 
 $$\sigma > m \Rightarrow \sigma \equiv m \left({\mod \sigma - m}\right)$$

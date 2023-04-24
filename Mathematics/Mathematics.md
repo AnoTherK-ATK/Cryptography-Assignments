@@ -276,7 +276,7 @@ for i in range(0, 224, 8):
     binary = cipher[i:i + 8]
     print(chr(int(binary,2)),end="")
 ```
-crypto{p4tterns_1n_re5idu3s}
+
 
 ## Modular Binomials
 ### Solution
@@ -286,7 +286,7 @@ Factordb for the `N` and you will get `p` and `q`
 
 ## Broken RSA
 ### Solution
-$n$ is prime. $e$ is a power of 2, we can we can take consecutive square roots (where possible) to find the $e$-th root.
+$n$ is prime. $e$ is a power of 2, we can we can take consecutive square roots (where possible) to find the $e$ - th root.
 
 ### Code
 
