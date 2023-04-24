@@ -162,7 +162,7 @@ print(long_to_bytes(m))
 ## Manyprime
 ### Solution
 Factordb again, it's too strong
-![[Manyprime.png]]
+![](Manyprime.png)
 
 ### Code
 
